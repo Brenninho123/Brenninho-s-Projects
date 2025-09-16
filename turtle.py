@@ -1,5 +1,7 @@
 import turtle
 import print
+import software
+import auto
 
 def draw_square(t, size):
     
