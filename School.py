@@ -11,6 +11,7 @@ import chemical
 import spanish
 import france
 import art
+import software
 import print
 
 def draw_circle(c, size):
@@ -77,6 +78,11 @@ addCountry('Brazil'):
 addCountry('USA'):
 addCountry('Portugal'):
 addCountry('France')
+
+if software()
+def system_auto(system, size):
+  def system_auto(size):
+    def system_title(School Python):
 
 print='circle'
 print='square'
