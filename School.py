@@ -70,12 +70,13 @@ read('love')
 if history()
 addHistoryList('WW1 - 1918'):
 addHistoryList('WW2 - 1939'):
+addHistoryLisy('Cold War - 1960'):
 
 if geography()
 addCountry('Brazil'):
 addCountry('USA'):
-addCountry('Portugal')
-
+addCountry('Portugal'):
+addCountry('France')
 
 print='circle'
 print='square'
