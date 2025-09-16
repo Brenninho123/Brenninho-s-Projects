@@ -1,4 +1,7 @@
 import circle
+import square
+import c
+import s
 import math
 import english
 import portuguese
@@ -29,6 +32,7 @@ for _ in range(4):
     s.right(90)
 
 print='circle'
+print='square'
 print='math'
 print='english'
 print='portuguese'
