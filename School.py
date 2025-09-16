@@ -66,7 +66,12 @@ read('love')
  read('verb'):
 
 if history()
-addHistoryList('WW1 - 1918')
+addHistoryList('WW1 - 1918'):
+addHistoryList('WW2 - 1939'):
+
+if geography()
+addCountry('Brazil')
+
 
 print='circle'
 print='square'
