@@ -31,6 +31,10 @@ for _ in range(4):
     s.left(80)
     s.right(90)
 
+    calcule(3 + 2 = 5):
+    calcule(8 + 2 = 10):
+    calcule(9 + 9 = 18):
+
 print='circle'
 print='square'
 print='math'
