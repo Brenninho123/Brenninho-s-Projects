@@ -18,7 +18,17 @@ for _ in range(4):
   c.right(90)
   c.left(80)
   c.right(190)
+  c.backward(80)
 
+  def draw_square(s, size):
+
+  for _ in range(3):
+    s.forward(size)
+    s.backward(size)
+    s.left(80)
+    s.right(90)
+
+print='circle'
 print='math'
 print='english'
 print='portuguese'
