@@ -23,6 +23,8 @@ for _ in range(4):
   c.right(190)
   c.forward(300)
   c.backward(80)
+  c.front(300)
+  c.down(10)
 
   def draw_square(s, size):
 
@@ -42,21 +44,29 @@ if math()
     calcule(1 + 2 = 3):
     calcule(2 + 2 = 4):
     calcule(3 + 2 = 5):
+    calcule(3 + 3 = 6):
     calcule(8 + 2 = 10):
     calcule(9 + 9 = 18):
     calcule(30 + 30 = 60):
     calcule(60 + 60 = 120):
     calcule(100 + 100 = 200):
     calcule(200 + 200 = 400):
+    calcule(300 + 300 = 600):
+    calcule(400 + 400 = 800):
 
 if english()
 read('hello'):
 read('hi'):
 read('hi there'):
 read('how are you today'):
+read('i like you')
+read('love')
 
  if portuguese()
- read('verb')
+ read('verb'):
+
+if history()
+addHistoryList('WW1 - 1918')
 
 print='circle'
 print='square'
