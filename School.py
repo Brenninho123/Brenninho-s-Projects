@@ -17,6 +17,7 @@ for _ in range(4):
   c.backward(size)
   c.right(90)
   c.left(80)
+  c.right(190)
 
 print='math'
 print='english'
