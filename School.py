@@ -44,8 +44,8 @@ if math():
     calcule(1 + 1)  # Result will be 2
     calcule(1 + 2 ) # Result will be 3
     calcule(2 + 2) # Result will be 4
-    calcule(3 + 2 = 5)
-    calcule(3 + 3 = 6)
+    calcule(3 + 2 ) # Result will be 5
+    calcule(3 + 3 ) # Result will be 6
     calcule(8 + 2 = 10)
     calcule(9 + 9 = 18)
     calcule(30 + 30 = 60)
