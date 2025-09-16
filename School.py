@@ -1,3 +1,4 @@
+import circle
 import math
 import english
 import portuguese
@@ -9,7 +10,13 @@ import france
 import art
 import print
 
-def draw_circle(c, size);
+def draw_circle(c, size):
+  
+for _ in range(4):
+  c.forward(size)
+  c.backward(size)
+  c.right(90)
+  c.left(80)
 
 print='math'
 print='english'
