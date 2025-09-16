@@ -83,6 +83,7 @@ if software()
 def system_auto(system, size):
   def system_auto(size):
     def system_title(School Python):
+      def system_local(Brazil)
 
 print='circle'
 print='square'
