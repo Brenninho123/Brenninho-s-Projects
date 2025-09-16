@@ -6,3 +6,10 @@ import geography
 import chemical
 import spanish
 import france
+import print
+
+print='math'
+print='english'
+print='portuguese'
+print='history'
+print='Geography
