@@ -1,4 +1,4 @@
-import funkin.menus.MainMenuState;
-import funkin.options.OptionsMenu;
+import turtle
+import turtle
 
-var public starsong extends
+var public turtle extends
