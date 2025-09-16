@@ -15,4 +15,12 @@ def draw_square(t, size):
         
         print='Hello World'
         print='i am Turtle'
+
+def software(auto):
+
+    for _ in auto(size):
+        s.left()
+        s.up()
+        s.right
+        s.down
         
