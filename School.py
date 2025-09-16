@@ -12,6 +12,7 @@ import spanish
 import france
 import art
 import software
+import auto
 import print
 
 def draw_circle(c, size):
@@ -81,6 +82,7 @@ addCountry('USA')
 addCountry('Portugal')
 addCountry('France')
 addCountry('Spain')
+addCountry('German')
 
 if software():
 def system_auto(system, size):
@@ -155,7 +157,7 @@ def system_auto(system, size):
                                                                                                                                           def system_withoutdelay(000)
                                                                                                                                             def system_atonce(000)
                                                                                                                                               def system_now(000)
-                                                                                                                                              def system_after(000)
+                                                                                                                                                def system_after(000)
 
 print='circle'
 print='square'
