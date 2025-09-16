@@ -53,6 +53,8 @@ if math()
     calcule(200 + 200 = 400):
     calcule(300 + 300 = 600):
     calcule(400 + 400 = 800):
+    calcule(500 + 500 = 1000):
+    calcule(1000 + 1000 = 2000):
 
 if english()
 read('hello'):
@@ -70,7 +72,8 @@ addHistoryList('WW1 - 1918'):
 addHistoryList('WW2 - 1939'):
 
 if geography()
-addCountry('Brazil')
+addCountry('Brazil'):
+addCountry('USA')
 
 
 print='circle'
