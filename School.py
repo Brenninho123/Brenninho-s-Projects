@@ -53,12 +53,15 @@ if english()
 read('hello'):
 read('hi'):
 read('hi there'):
+read('how are you today'):
 
  if portuguese()
  read('verb')
 
 print='circle'
 print='square'
+print='c'
+print='s'
 print='math'
 print='english'
 print='portuguese'
