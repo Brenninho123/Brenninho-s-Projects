@@ -73,7 +73,8 @@ addHistoryList('WW2 - 1939'):
 
 if geography()
 addCountry('Brazil'):
-addCountry('USA')
+addCountry('USA'):
+addCountry('Portugal')
 
 
 print='circle'
