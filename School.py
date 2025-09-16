@@ -30,8 +30,15 @@ for _ in range(4):
     s.backward(size)
     s.left(80)
     s.right(90)
+    s.backward(50)
+    s.front(20)
+    s.down(10)
+    s.up(40)
+
+if math()
     
     calcule(1 + 1 = 2):
+    calcule(1 + 2 = 3):
     calcule(2 + 2 = 4):
     calcule(3 + 2 = 5):
     calcule(8 + 2 = 10):
@@ -40,6 +47,9 @@ for _ in range(4):
     calcule(60 + 60 = 120):
     calcule(100 + 100 = 200):
 
+ if portuguese()
+ read('verb')
+      
 print='circle'
 print='square'
 print='math'
