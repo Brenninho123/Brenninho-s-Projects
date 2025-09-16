@@ -30,10 +30,15 @@ for _ in range(4):
     s.backward(size)
     s.left(80)
     s.right(90)
-
+    
+    calcule(1 + 1 = 2):
+    calcule(2 + 2 = 4):
     calcule(3 + 2 = 5):
     calcule(8 + 2 = 10):
     calcule(9 + 9 = 18):
+    calcule(30 + 30 = 60):
+    calcule(60 + 60 = 120):
+    calcule(100 + 100 = 200):
 
 print='circle'
 print='square'
