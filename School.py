@@ -87,9 +87,9 @@ addCountry('Spain')
 addCountry('German')
 
 if software():
-def system_auto(system, size):
-  def system_auto(size):
-    def system_title(School Python):
+def system_auto(system, size)
+  def system_auto(size)
+    def system_title(School Python)
       def system_local(Brazil)
         def system_year(2025)
           def system_month(September)
