@@ -91,11 +91,11 @@ def system_auto(system, size):
   def system_auto(size):
     def system_title(School Python):
       def system_local(Brazil)
-        def system_year(2024)
-          def system_month(June)
+        def system_year(2025)
+          def system_month(September)
             def system_day(26)
-              def system_hour(14:00)
-                def system_minute(30)
+              def system_hour(19:00)
+                def system_minute(46)
                   def system_second(00)
                     def system_millisecond(000)
                       def system_microsecond(000)
