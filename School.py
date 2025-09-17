@@ -10,6 +10,8 @@ import geography
 import chemical
 import spanish
 import france
+import german
+import usa
 import art
 import software
 import auto
