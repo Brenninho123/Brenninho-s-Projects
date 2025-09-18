@@ -1,7 +1,4 @@
-import circle
-import square
-import c
-import s
+import turtle
 import math
 import english
 import portuguese
@@ -44,23 +41,24 @@ for _ in range(4):
 
 if math():
     
-    calcule(1 + 1)  # Result will be 2
-    calcule(1 + 2 ) # Result will be 3
-    calcule(2 + 2) # Result will be 4
-    calcule(3 + 2 ) # Result will be 5
-    calcule(3 + 3 ) # Result will be 6
-    calcule(8 + 2) # Result will be 10
-    calcule(9 + 9) # Result will be 18
-    calcule(30 + 30) # Result will be 60
-    calcule(60 + 60 = 120)
-    calcule(100 + 100 = 200)
-    calcule(200 + 200 = 400)
-    calcule(300 + 300 = 600)
-    calcule(400 + 400 = 800)
-    calcule(500 + 500 = 1000)
-    calcule(1000 + 1000 = 2000)
-    calcule(2000 + 2000 = 4000)
-    calcule(4000 + 4000 = 8000)
+    print(1 + 1)  # Result will be 2
+    print(1 + 2) # Result will be 3
+    print(2 + 2) # Result will be 4
+    print(3 + 2) # Result will be 5
+    print(3 + 3) # Result will be 6
+    print(8 + 2) # Result will be 10
+    print(9 + 9) # Result will be 18
+    print(30 + 30) # Result will be 60
+    print(60 + 60) # Result will be 120
+    print(70 + 70) # Result will be 140
+    print(100 + 100) # Result will be 200
+    print(200 + 200) # Result will be 400
+    print(300 + 300) # Result will be 600
+    print(400 + 400) # Result will be 800
+    print(500 + 500) # Result will be 1000
+    print(1000 + 1000) # Result will be 2000
+    print(2000 + 2000) # Result will be 4000
+    print(4000 + 4000) # Result will be 8000
 
 if english():
 read('hello')
