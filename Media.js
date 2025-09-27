@@ -1,77 +1,109 @@
-method.call(context, ...arguments);
-method.apply(context, arguments);
-method.bind(context, ...arguments);
+from datetime import datetime
+from typing import List, Optional
+from enum import Enum
 
-MediaCapabilitiesInforming;34530
-MediaCapabilitiesInforming;34531
-MediaCapabilitiesInforming;34532
-MediaCapabilitiesInforming;34533
-MediaCapabilitiesInforming;34534
-MediaCapabilitiesInforming;34535
-MediaCapabilitiesInforming;34536
-MediaCapabilitiesInforming;34537
-MediaCapabilitiesInforming;34538
-MediaCapabilitiesInforming;34539
-MediaCapabilitiesInforming;34540
-MediaCapabilitiesInforming;34541
-MediaCapabilitiesInforming;34542
-MediaCapabilitiesInforming;34543
-MediaCapabilitiesInforming;34544
-MediaCapabilitiesInforming;34545
-MediaCapabilitiesInforming;34546
-MediaCapabilitiesInforming;34547
-MediaCapabilitiesInforming;34548
-MediaCapabilitiesInforming;34549
-MediaCapabilitiesInforming;34550
-MediaCapabilitiesInforming;34551
-MediaCapabilitiesInforming;34552
-MediaCapabilitiesInforming;34553
-MediaCapabilitiesInforming;34554
-MediaCapabilitiesInforming;34555
-MediaCapabilitiesInforming;34556
-MediaCapabilitiesInforming;34557
-MediaCapabilitiesInforming;34558
-MediaCapabilitiesInforming;34559
-MediaCapabilitiesInforming;34560
-MediaCapabilitiesInforming;34561
-MediaCapabilitiesInforming;34562
-MediaCapabilitiesInforming;34563
-MediaCapabilitiesInforming;34564
-MediaCapabilitiesInforming;34565
-MediaCapabilitiesInforming;34566
-MediaCapabilitiesInforming;34567
-MediaCapabilitiesInforming;34568
-MediaCapabilitiesInforming;34569
-MediaCapabilitiesInforming;34570
-MediaCapabilitiesInforming;34571
-MediaCapabilitiesInforming;34572
-MediaCapabilitiesInforming;34573
-MediaCapabilitiesInforming;34574
-MediaCapabilitiesInforming;34575
-MediaCapabilitiesInforming;34576
-MediaCapabilitiesInforming;34577
-MediaCapabilitiesInforming;34578
-MediaCapabilitiesInforming;34579
-MediaCapabilitiesInforming;34580
-MediaCapabilitiesInforming;34581
-MediaCapabilitiesInforming;34582
-MediaCapabilitiesInforming;34583
-MediaCapabilitiesInforming;34584
-MediaCapabilitiesInforming;34585
-MediaCapabilitiesInforming;34586
-MediaCapabilitiesInforming;34587
-MediaCapabilitiesInforming;34588
-MediaCapabilitiesInforming;34589
-MediaCapabilitiesInforming;34590
-MediaCapabilitiesInforming;34591
-MediaCapabilitiesInforming;34592
-MediaCapabilitiesInforming;34593
-MediaCapabilitiesInforming;34594
-MediaCapabilitiesInforming;34595
-MediaCapabilitiesInforming;34596
-MediaCapabilitiesInforming;34597
-MediaCapabilitiesInforming;34598
-MediaCapabilitiesInforming;34599
-MediaCapabilitiesInforming;34600
-MediaCapabilitiesInforming;34601
-MediaCapabilitiesInforming;34602
+class TaskStatus(Enum):
+    TODO = "TODO"
+    IN_PROGRESS = "IN_PROGRESS"
+    DONE = "DONE"
+
+class Task:
+    def __init__(self, title: str, description: str, due_date: str):
+        self.id = None  # Will be set by TaskManager
+        self.title = title
+        self.description = description
+        self.due_date = self._validate_date(due_date)
+        self.status = TaskStatus.TODO
+
+    def _validate_date(self, date_str: str) -> datetime:
+        try:
+            return datetime.strptime(date_str, "%Y-%m-%d")
+        except ValueError:
+            raise ValueError("Date must be in YYYY-MM-DD format")
+
+    def update_status(self, status: TaskStatus):
+        self.status = status
+
+class TaskManager:
+    def __init__(self):
+        self.tasks: List[Task] = []
+        self.next_id = 1
+
+    def add_task(self, task: Task) -> int:
+        task.id = self.next_id
+        self.tasks.append(task)
+        self.next_id += 1
+        return task.id
+
+    def remove_task(self, task_id: int) -> bool:
+        task = self.get_task(task_id)
+        if task:
+            self.tasks.remove(task)
+            return True
+        return False
+
+    def get_task(self, task_id: int) -> Optional[Task]:
+        return next((task for task in self.tasks if task.id == task_id), None)
+
+    def list_tasks(self, status: TaskStatus = None) -> List[Task]:
+        if status:
+            return [task for task in self.tasks if task.status == status]
+        return self.tasks
+
+def main():
+    manager = TaskManager()
+    
+    while True:
+        print("\n1. Add task")
+        print("2. List tasks")
+        print("3. Update task status")
+        print("4. Remove task")
+        print("5. Exit")
+        
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            title = input("Title: ")
+            desc = input("Description: ")
+            due_date = input("Due date (YYYY-MM-DD): ")
+            try:
+                task = Task(title, desc, due_date)
+                task_id = manager.add_task(task)
+                print(f"Task added with ID: {task_id}")
+            except ValueError as e:
+                print(f"Error: {e}")
+
+        elif choice == "2":
+            tasks = manager.list_tasks()
+            for task in tasks:
+                print(f"\nID: {task.id}")
+                print(f"Title: {task.title}")
+                print(f"Status: {task.status.value}")
+                print(f"Due: {task.due_date.strftime('%Y-%m-%d')}")
+
+        elif choice == "3":
+            task_id = int(input("Task ID: "))
+            print("Statuses: TODO, IN_PROGRESS, DONE")
+            status = input("New status: ")
+            task = manager.get_task(task_id)
+            if task:
+                try:
+                    task.update_status(TaskStatus[status])
+                    print("Status updated")
+                except KeyError:
+                    print("Invalid status")
+            else:
+                print("Task not found")
+
+        elif choice == "4":
+            task_id = int(input("Task ID: "))
+            if manager.remove_task(task_id):
+                print("Task removed")
+            else:
+                print("Task not found")
+
+        elif choice == "5":
+            break
+
+if __name__ == "__main__":
+    main()
