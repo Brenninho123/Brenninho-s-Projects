@@ -66,15 +66,15 @@ if math():
     print(64000 + 64000) # Result will be 128000
 
 if english():
-read('hello')
-read('hi')
-read('hi there')
-read('how are you today')
-read('i like you')
-read('love')
+    print('hello')
+    print('hi')
+    print('hi there')
+    print('how are you today')
+    print('i like you')
+    print('love')
 
  if portuguese():
- read('verb')
+ print('verb')
 
 if history():
 addHistoryList('WW1 - 1918')
