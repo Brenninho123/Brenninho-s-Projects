@@ -27,21 +27,23 @@ def draw_circle(c, size):
   c.front(300)
   c.down(10)
 
-  def draw_square(s, size):
-      for _ in range(3):
-          s.forward(size)
-          s.backward()
-          s.left(80)
-          s.right(90)
-          s.backward(50)
-          s.front(20)
-          s.down(10)
-          s.up(40)
+def draw_square(s, size):
+    for _ in range(3):
+        s.forward(size)
+        s.backward()
+        s.left(80)
+        s.right(90)
+        s.backward(50)
+        s.front(20)
+        s.down(10)
+        s.up(40)
 
 if math():
     
     print(1 + 1)  # Result will be 2
     print(1 + 2) # Result will be 3
+    print(1 + 3) # Result will be 4
+    print(1 + 4) # Result will be 5
     print(2 + 2) # Result will be 4
     print(3 + 2) # Result will be 5
     print(3 + 3) # Result will be 6
@@ -58,6 +60,10 @@ if math():
     print(1000 + 1000) # Result will be 2000
     print(2000 + 2000) # Result will be 4000
     print(4000 + 4000) # Result will be 8000
+    print(8000 + 8000) # Result will be 16000
+    print(16000 + 16000) # Result will be 32000
+    print(32000 + 32000) # Result will be 64000
+    print(64000 + 64000) # Result will be 128000
 
 if english():
 read('hello')
