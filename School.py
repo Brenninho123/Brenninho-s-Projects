@@ -15,9 +15,8 @@ import auto
 import print
 
 def draw_circle(c, size):
-  
-for _ in range(4):
-  c.forward(size)
+      for _ in range(4):
+        c.forward(size)
   c.backward(size)
   c.right(90)
   c.left(80)
@@ -28,16 +27,15 @@ for _ in range(4):
   c.down(10)
 
   def draw_square(s, size):
-
-  for _ in range(3):
-    s.forward(size)
-    s.backward()
-    s.left(80)
-    s.right(90)
-    s.backward(50)
-    s.front(20)
-    s.down(10)
-    s.up(40)
+      for _ in range(3):
+          s.forward(size)
+          s.backward()
+          s.left(80)
+          s.right(90)
+          s.backward(50)
+          s.front(20)
+          s.down(10)
+          s.up(40)
 
 if math():
     
