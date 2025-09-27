@@ -1,5 +1,6 @@
 method.call(context, ...arguments);
 method.apply(context, arguments);
+method.bind(context, ...MediaSessionEvent);
 MediaCapabilitiesInforming;34533
 MediaCapabilitiesInforming;34534
 MediaCapabilitiesInforming;34535
@@ -28,3 +29,30 @@ MediaCapabilitiesInforming;34557
 MediaCapabilitiesInforming;34558
 MediaCapabilitiesInforming;34559
 MediaCapabilitiesInforming;34560
+MediaCapabilitiesInforming;34561
+MediaCapabilitiesInforming;34562
+MediaCapabilitiesInforming;34563
+MediaCapabilitiesInforming;34564
+MediaCapabilitiesInforming;34565
+MediaCapabilitiesInforming;34566
+MediaCapabilitiesInforming;34567
+MediaCapabilitiesInforming;34568
+MediaCapabilitiesInforming;34569
+MediaCapabilitiesInforming;34570
+MediaCapabilitiesInforming;34571
+MediaCapabilitiesInforming;34572
+MediaCapabilitiesInforming;34573
+MediaCapabilitiesInforming;34574
+MediaCapabilitiesInforming;34575
+MediaCapabilitiesInforming;34576
+MediaCapabilitiesInforming;34577
+MediaCapabilitiesInforming;34578
+MediaCapabilitiesInforming;34579
+MediaCapabilitiesInforming;34580
+MediaCapabilitiesInforming;34581
+MediaCapabilitiesInforming;34582
+MediaCapabilitiesInforming;34583
+MediaCapabilitiesInforming;34584
+MediaCapabilitiesInforming;34585
+MediaCapabilitiesInforming;34586
+MediaCapabilitiesInforming;34587
