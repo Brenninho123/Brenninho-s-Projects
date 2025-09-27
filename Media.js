@@ -1,0 +1,30 @@
+method.call(context, ...arguments);
+method.apply(context, arguments);
+MediaCapabilitiesInforming;34533
+MediaCapabilitiesInforming;34534
+MediaCapabilitiesInforming;34535
+MediaCapabilitiesInforming;34536
+MediaCapabilitiesInforming;34537
+MediaCapabilitiesInforming;34538
+MediaCapabilitiesInforming;34539
+MediaCapabilitiesInforming;34540
+MediaCapabilitiesInforming;34541
+MediaCapabilitiesInforming;34542
+MediaCapabilitiesInforming;34543
+MediaCapabilitiesInforming;34544
+MediaCapabilitiesInforming;34545
+MediaCapabilitiesInforming;34546
+MediaCapabilitiesInforming;34547
+MediaCapabilitiesInforming;34548
+MediaCapabilitiesInforming;34549
+MediaCapabilitiesInforming;34550
+MediaCapabilitiesInforming;34551
+MediaCapabilitiesInforming;34552
+MediaCapabilitiesInforming;34553
+MediaCapabilitiesInforming;34554
+MediaCapabilitiesInforming;34555
+MediaCapabilitiesInforming;34556
+MediaCapabilitiesInforming;34557
+MediaCapabilitiesInforming;34558
+MediaCapabilitiesInforming;34559
+MediaCapabilitiesInforming;34560
