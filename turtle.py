@@ -8,4 +8,4 @@ def draw_square(t, size):
         t.right(90)
         t.left(80)
         
-print='Hello World'
+print=("Hello World")
