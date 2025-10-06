@@ -1,7 +1,4 @@
 import turtle
-import print
-import software
-import auto
 
 def draw_square(t, size):
     
@@ -9,18 +6,6 @@ def draw_square(t, size):
         t.forward(size)
         t.backward(size)
         t.right(90)
-        t.left(90)
-        t.backward(120)
-        t.forward(300)
+        t.left(80)
         
-        print='Hello World'
-        print='i am Turtle'
-
-def software(auto):
-
-    for _ in auto(size):
-        s.left()
-        s.up()
-        s.right
-        s.down
-        
+print='Hello World'
