@@ -12,3 +12,9 @@ var public Paths extends Module {
         super();
     }
 }
+
+var public PlayState extends Module {
+    public function new() {
+        super();
+    }
+}
