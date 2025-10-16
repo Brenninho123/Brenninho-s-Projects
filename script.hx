@@ -1,5 +1,6 @@
 import turtle;
 import Paths;
+import PlayState;
 
 var public turtle extends Module {
     public function new() {
