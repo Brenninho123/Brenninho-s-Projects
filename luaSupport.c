@@ -1,23 +1,27 @@
+#ifdef __cplusplus
 extern "C" {
-#include "lua.h"
-#include "lauxlib.h"
-#include "lualib.h"
+#endif
+
+#include <lua.h>
+#include <lauxlib.h>
+#include <lualib.h>
+
+#ifdef __cplusplus
 }
+#endif
 
 #include <iostream>
-#include  <lua.hpp>
 
 int main() {
     lua_State *L = luaL_newstate();   // create a new Lua state
     luaL_openlibs(L);                 // open Lua standard libraries
 
     // Load and run a Lua script from a string
-    const char* lua_script = R"(
-        print("Hello from Lua!")
-        function add(a, b)
-            return a + b
-        end
-    )";
+    const char* lua_script =
+        "        print(\"Hello World!\")\n"
+        "        function add(a, b)\n"
+        "            return a + b\n"
+        "        end\n";
 
     if (luaL_dostring(L, lua_script) != LUA_OK) {
         std::cerr << "Error running Lua script: " << lua_tostring(L, -1) << std::endl;
